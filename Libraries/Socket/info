@@ -1,0 +1,7 @@
+"""
+    .....TCP and UDP Protocols.....
+
+    (socket.socket.SOCK_DGRAM) is UDP
+    (socket.SOCK_STREAM) is TCP
+
+"""

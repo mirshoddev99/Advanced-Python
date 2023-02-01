@@ -1,0 +1,13 @@
+						Concepts of OOP
+
+1. Understand self and __init__
+
+2. Inheritence <Vorislik> - Bir klassdan boshqa bir klass yaratish.
+
+3. Polymorphism <Polimorfizm> - Yangi yaratilgan klassni ichida super klass (parent class)dan meros qolgan (olgan) metod (qismlar)ni o'zgartirish.
+
+4. Encapsulation <Enkapsulatsiya> - Biror bir obyektning xususiyatini yashirin qilish tashqaridan murojaat qilolmaydigan qilish. 
+	
+	1. example - > self.__id = uuid4() <- enkapsulatsiya qilinganligining misoli.
+
+5. Class o'ziga xos xususiyatlar  (dekoratorlar)

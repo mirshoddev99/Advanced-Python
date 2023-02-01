@@ -1,0 +1,49 @@
+Metacharacters are characters with a special meaning:
+All meta characters: . ^ $ * + ? { } [ ] \ | ( )
+Meta characters need need to be escaped (with ) if we actually want to search for the char.
+
+. Any character (except newline character) "he..o"
+^ Starts with "^hello"
+\$ Ends with "world\$"
+* Zero or more occurrences "aix*"
++ One or more occurrences "aix+"
+{ } Exactly the specified number of occurrences "al{2}"
+[] A set of characters "[a-m]"
+\ Signals a special sequence (can also be used to escape special characters) "\d"
+| Either or "falls|stays"
+( ) Capture and group
+
+
+More Metacharacters / Special Sequences¶
+A special sequence is a \ followed by one of the characters in the list below, and has a special meaning:
+
+\d :Matches any decimal digit; this is equivalent to the class [0-9].
+\D : Matches any non-digit character; this is equivalent to the class [^0-9].
+\s : Matches any whitespace character;
+\S : Matches any non-whitespace character;
+\w : Matches any alphanumeric (word) character; this is equivalent to the class [a-zA-Z0-9_].
+\W : Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
+\b Returns a match where the specified characters are at the beginning or at the end of a word r"\bain" r"ain\b"
+\B Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word r"\Bain" r"ain\B"
+\A Returns a match if the specified characters are at the beginning of the string "\AThe"
+\Z Returns a match if the specified characters are at the end of the string "Spain\Z"
+
+
+
+Quantifiers
+* : 0 or more
++ : 1 or more
+? : 0 or 1, used when a character can be optional
+{4} : exact number
+{4,6} : range numbers (min, max)
+
+
+
+
+Compilation Flags¶
+ASCII, A : Makes several escapes like \w, \b, \s and \d match only on ASCII characters with the respective property.
+DOTALL, S : Make . match any character, including newlines.
+IGNORECASE, I : Do case-insensitive matches.
+LOCALE, L : Do a locale-aware match.
+MULTILINE, M : Multi-line matching, affecting ^ and $.
+VERBOSE, X (for ‘extended’) : Enable verbose REs, which can be organized more cleanly and understandably.

@@ -1,0 +1,12 @@
+                                                Thread Overview
+
+CPU: Piece of hardware that executes code
+
+OS: Handles the scheduling of when the CPU can be used
+
+Process: A program as it is being executed
+
+Thread: Part of a process
+
+
+
